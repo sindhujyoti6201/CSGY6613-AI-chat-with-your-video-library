@@ -1,0 +1,23 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.idea/
+
+# venv
+.venv
+
+.ipynb_checkpoints/
+ETL/.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+requirements-dev.lock
+
+.env
+.DS_Store/
+datasets/videos/.DS_Store/

@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    volumes:
+      - mongo-data:/data/db
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    depends_on:
+      - mongo
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_SERVER: ${ME_CONFIG_MONGODB_SERVER}
+      ME_CONFIG_MONGODB_PORT: ${ME_CONFIG_MONGODB_PORT}
+      ME_CONFIG_MONGODB_AUTH: "false"  # Ensure authentication is used
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${ME_CONFIG_MONGODB_ADMINUSERNAME}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${ME_CONFIG_MONGODB_ADMINPASSWORD}
+      ME_CONFIG_BASICAUTH: "false"  # Disable basic auth for the web interface
+
+  video-etl:
+    build:
+      context: .
+      dockerfile: src/csgy6613_ai_project/data-collection-pipeline/Dockerfile
+    container_name: video-etl
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=${MONGO_URI}
+  
+  qdrant:
+    image: qdrant/qdrant
+    container_name: qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  embedder:
+    build: 
+      context: ./src/csgy6613_ai_project/feature-pipeline
+    container_name: embedder
+    depends_on:
+      - mongo
+      - qdrant
+    environment:
+      - MONGO_URI=${MONGO_URI}
+
+  retriever-and-response-generator:
+    build: 
+      context: .
+      dockerfile: src/csgy6613_ai_project/retrieval-and-generation-pipeline/Dockerfile
+    container_name: retriever-and-response-generator
+    ports:
+      - "7860:7860"  # Map Gradio port to host
+    environment:
+      - GRADIO_SERVER_PORT=${GRADIO_SERVER_PORT}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    depends_on:
+      - qdrant
+    restart: unless-stopped
+
+
+volumes:
+  mongo-data:
+  qdrant_data:
