@@ -1,0 +1,16 @@
+av==14.2.0
+datasets==3.5.0
+json5==0.10.0
+pymongo==4.11.3
+webvtt-py==0.5.1
+pillow==11.1.0
+torch==2.6.0
+torchmetrics==1.6.1
+torchvision==0.21.0
+pytorch-lightning==2.5.0
+pandas
+open-clip-torch
+qdrant-client
+gradio
+google-generativeai
+moviepy
