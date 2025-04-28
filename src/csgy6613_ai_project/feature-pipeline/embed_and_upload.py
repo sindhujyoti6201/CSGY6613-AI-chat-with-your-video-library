@@ -1,4 +1,3 @@
-# === Imports ===
 import torch
 import open_clip
 import base64
@@ -9,13 +8,13 @@ from pymongo import MongoClient
 from qdrant_client import QdrantClient
 from qdrant_client.models import PointStruct, VectorParams, Distance
 
-# ---------- 0. MongoDB Setup ----------
+# mongo setup 
 mongo_uri = os.getenv("MONGO_URI")
 client = MongoClient(mongo_uri)
 db = client["video_and_subtitle_rag_db"]
 collection = db["video_and_subtitle_chunks"]
 
-# ---------- 1. Load OpenCLIP ----------
+# load OpenCLIP
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 model, _, preprocess = open_clip.create_model_and_transforms(
@@ -24,7 +23,7 @@ model, _, preprocess = open_clip.create_model_and_transforms(
 tokenizer = open_clip.get_tokenizer('ViT-B-32')
 model = model.to(device).eval()
 
-# ---------- 2. Embed Functions ----------
+# embed functions
 def embed_text(text):
     tokens = tokenizer([text]).to(device)
     with torch.no_grad():
@@ -38,7 +37,7 @@ def embed_image_from_base64(b64):
         image_features = model.encode_image(img_tensor)
     return image_features[0].cpu().numpy()
 
-# ---------- 3. Load from MongoDB & Embed ----------
+#  load from mongoDB and embed 
 points = []
 cursor = collection.find({})
 for i, doc in enumerate(cursor):
@@ -68,9 +67,8 @@ for i, doc in enumerate(cursor):
         print(f"Error in doc {i}: {e}")
         continue
 
-# ---------- 4. Upload to Qdrant ----------
+#  upload to qdrant
 if points:
-    # Qdrant Setup
     qdrant = QdrantClient(host="qdrant", port=6333)
 
     qdrant.recreate_collection(
