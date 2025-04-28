@@ -1,4 +1,3 @@
-# === Imports ===
 from datasets import load_dataset
 import webvtt
 import json
@@ -11,11 +10,9 @@ import base64
 from PIL import Image
 from pymongo import MongoClient
 
-
-# === Helper Functions ===
 def clean_caption_text(text):
     text = text.replace('\n', ' ').strip()
-    fillers = {"uh", "um", "you know", "like"}
+    fillers = {"uh", "um", "you know", "like"} #used a lot as fillers by prof.
     tokens = text.split()
     tokens = [t for t in tokens if t.lower() not in fillers]
     text = " ".join(tokens)
@@ -107,15 +104,15 @@ def chunk_by_fixed_window(vtt_str, video_path, window=30):
     return chunks
 
 
-# === MongoDB Setup ===
+# MongoDB Setup
 mongo_uri = os.getenv("MONGO_URI")
 client = MongoClient(mongo_uri)  # Connect to MongoDB
 db = client["video_and_subtitle_rag_db"]
 collection = db["video_and_subtitle_chunks"]
 # Ensure the collection is empty before starting
-collection.delete_many({})  # optional: clean slate
+collection.delete_many({}) 
 
-# === Dataset Load & Stream to Mongo ===
+# Dataset Load 
 dataset = load_dataset("webdataset", data_files="./datasets/youtube_dataset.tar", streaming=True).with_format("torch")
 
 for sample in dataset["train"]:
@@ -150,9 +147,9 @@ for sample in dataset["train"]:
             })
             collection.insert_one(chunk)
 
-        print(f"✅ Inserted {len(chunks)} chunks for {video_id}")
+        print(f"Inserted {len(chunks)} chunks for {video_id}")
         os.remove(temp_video_path)
 
     except Exception as e:
-        print(f"❌ Failed processing sample: {e}")
+        print(f"Failed processing sample: {e}")
         continue
