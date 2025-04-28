@@ -1,4 +1,3 @@
-# === Imports ===
 import os
 import torch
 import open_clip
@@ -14,7 +13,7 @@ import tempfile
 from moviepy.editor import VideoFileClip
 import re
 
-# ---------- 1. Load OpenCLIP ----------
+# load OpenCLIP 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model, _, preprocess = open_clip.create_model_and_transforms(
     'ViT-B-32', pretrained='laion2b_s34b_b79k'
@@ -22,14 +21,14 @@ model, _, preprocess = open_clip.create_model_and_transforms(
 tokenizer = open_clip.get_tokenizer('ViT-B-32')
 model = model.to(device).eval()
 
-# ---------- 2. Embed Text Function ----------
+# embed text function
 def embed_text(text):
     tokens = tokenizer([text]).to(device)
     with torch.no_grad():
         text_features = model.encode_text(tokens)
     return text_features[0].cpu().numpy()
 
-# ---------- 3. Gemini Setup ----------
+# Gemini Setup 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY", ""))
 generation_config = {
     "temperature": 0.4,
@@ -42,10 +41,10 @@ gemini_model = genai.GenerativeModel(
     generation_config=generation_config
 )
 
-# ---------- 4. Qdrant Client ----------
+# qdrant client
 qdrant = QdrantClient(host="qdrant", port=6333)
 
-# ---------- 5. Format Context from Qdrant Hits ----------
+# Format Context from Qdrant Hits
 def format_context(results):
     grouped = defaultdict(list)
 
@@ -77,7 +76,7 @@ def format_context(results):
 
     return "\n".join(context_blocks)
 
-# ---------- 6. Ask Gemini with Context ----------
+# passing throug the LLM
 def ask_gemini_with_context(question, context):
     prompt = f"""Answer the question using ONLY the context below.
 If relevant information comes from multiple chunks of the SAME video, merge the timestamps (start time should be the start of the first chunk and end time should be the end of the last chunk).
@@ -101,7 +100,7 @@ End Time: <end> minutes and seconds
     return response.text.strip()
 
 
-# ---------- 7. Extract Video Segment ----------
+# extract Video Segment 
 def extract_video_segment(input_path, output_path, start_time, end_time):
     print(f"Extracting video segment from {start_time} to {end_time} seconds.")
     print(f"Input path: {input_path}")
@@ -116,7 +115,7 @@ def extract_video_segment(input_path, output_path, start_time, end_time):
     clip.write_videofile(output_path, codec="libx264", audio_codec="aac")
     clip.close()  # close to release resources
 
-# ---------- 8. Extract Metadata from Answer ----------
+# extract Metadata from Answer
 def extract_metadata_from_answer(answer):
     video_id_match = re.search(r"Video ID:\s*([^\s]+)", answer)
     start_time_match = re.search(r"Start Time:\s*(\d+)\s*minutes?\s*and\s*(\d+)\s*seconds?", answer)
@@ -131,7 +130,7 @@ def extract_metadata_from_answer(answer):
 
     return video_id, start_time, end_time
 
-# ---------- 9. Process Query ----------
+# process query
 def process_query(question):
     query_vector = embed_text(question)
     results = qdrant.search("video_chunks_multimodal", query_vector, limit=15)
@@ -156,7 +155,7 @@ def process_query(question):
     return answer, trimmed_path
 
 
-# ---------- 10. Gradio Interface ----------
+# gradio interface 
 iface = gr.Interface(
     fn=process_query,
     inputs=gr.Textbox(lines=2, placeholder="Enter your question here..."),
