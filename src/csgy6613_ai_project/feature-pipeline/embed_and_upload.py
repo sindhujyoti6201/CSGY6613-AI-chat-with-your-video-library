@@ -49,7 +49,7 @@ for i, doc in enumerate(cursor):
         img_vec = embed_image_from_base64(doc["frame"])
         # Check if we can give more focus on the text part
         # text_vec = text_vec * 0.7 + img_vec * 0.3
-        multimodal_vec = (text_vec + img_vec) / 2
+        multimodal_vec = (0.7* text_vec + 0.3*img_vec)
 
         points.append(PointStruct(
             id=i,
@@ -69,6 +69,7 @@ for i, doc in enumerate(cursor):
 
 #  upload to qdrant
 if points:
+    # Qdrant Setup
     qdrant = QdrantClient(host="qdrant", port=6333)
 
     qdrant.recreate_collection(

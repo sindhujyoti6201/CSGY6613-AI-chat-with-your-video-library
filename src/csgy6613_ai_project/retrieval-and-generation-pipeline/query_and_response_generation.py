@@ -1,3 +1,4 @@
+# === Imports ===
 import os
 import torch
 import open_clip
@@ -78,8 +79,10 @@ def format_context(results):
 
 # passing throug the LLM
 def ask_gemini_with_context(question, context):
-    prompt = f"""Answer the question using ONLY the context below.
-If relevant information comes from multiple chunks of the SAME video, merge the timestamps (start time should be the start of the first chunk and end time should be the end of the last chunk).
+    prompt = f"""
+    You are given 15 relevant video segments based on cosine similarity to the user's question. The first few entries are the most similar. Use these segments in order of relevance, and give higher priority to the first few segments when generating your answer.
+
+    Answer the question using ONLY the context below. If relevant information comes from multiple chunks of the SAME video, merge the timestamps (start time should be the start of the first chunk and end time should be the end of the last chunk).
 Convert the timestamps to minutes and seconds. Check if the answer is in the context and if not, then give the next best answer.
 
 ### Context:
