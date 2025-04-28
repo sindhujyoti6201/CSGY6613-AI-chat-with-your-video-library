@@ -34,5 +34,15 @@ Refer to the detailed documentation above - "Artificial Intelligence Project Rep
    
 ![image](https://github.com/user-attachments/assets/ee23c2bd-cae8-45d1-a922-bdde51e1dfcd)
 
+4. Put your own .env file under the project:
 
+GEMINI_API_KEY=<>
+GRADIO_SERVER_PORT=7860
+MONGO_URI=mongodb://admin:admin123@mongo:27017
+ME_CONFIG_MONGODB_SERVER=mongo
+ME_CONFIG_MONGODB_PORT=27017
+ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+ME_CONFIG_MONGODB_ADMINPASSWORD=admin123
+MONGO_INITDB_ROOT_USERNAME=admin
+MONGO_INITDB_ROOT_PASSWORD=admin123
      
