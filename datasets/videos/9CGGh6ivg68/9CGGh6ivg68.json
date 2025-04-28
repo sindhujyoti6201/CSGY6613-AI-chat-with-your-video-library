@@ -1,0 +1,1026 @@
+{
+  "video_id": "9CGGh6ivg68",
+  "title": "1 introduction",
+  "captions": [
+    {
+      "start": "00:00:02.990",
+      "end": "00:00:03.000",
+      "text": "in this video I would like to start the"
+    },
+    {
+      "start": "00:00:03.000",
+      "end": "00:00:04.870",
+      "text": "in this video I would like to start the discussion about convolutional new"
+    },
+    {
+      "start": "00:00:04.870",
+      "end": "00:00:04.880",
+      "text": "discussion about convolutional new"
+    },
+    {
+      "start": "00:00:04.880",
+      "end": "00:00:07.389",
+      "text": "discussion about convolutional new networks which is another architecture"
+    },
+    {
+      "start": "00:00:07.389",
+      "end": "00:00:07.399",
+      "text": "networks which is another architecture"
+    },
+    {
+      "start": "00:00:07.399",
+      "end": "00:00:09.830",
+      "text": "networks which is another architecture of uh neural networks that we are going"
+    },
+    {
+      "start": "00:00:09.830",
+      "end": "00:00:09.840",
+      "text": "of uh neural networks that we are going"
+    },
+    {
+      "start": "00:00:09.840",
+      "end": "00:00:12.789",
+      "text": "of uh neural networks that we are going to see specifically kind of engineered"
+    },
+    {
+      "start": "00:00:12.789",
+      "end": "00:00:12.799",
+      "text": "to see specifically kind of engineered"
+    },
+    {
+      "start": "00:00:12.799",
+      "end": "00:00:15.869",
+      "text": "to see specifically kind of engineered uh to um address problems that we are"
+    },
+    {
+      "start": "00:00:15.869",
+      "end": "00:00:15.879",
+      "text": "uh to um address problems that we are"
+    },
+    {
+      "start": "00:00:15.879",
+      "end": "00:00:17.510",
+      "text": "uh to um address problems that we are facing in computer vision I want to"
+    },
+    {
+      "start": "00:00:17.510",
+      "end": "00:00:17.520",
+      "text": "facing in computer vision I want to"
+    },
+    {
+      "start": "00:00:17.520",
+      "end": "00:00:20.269",
+      "text": "facing in computer vision I want to start this discussion with um just"
+    },
+    {
+      "start": "00:00:20.269",
+      "end": "00:00:20.279",
+      "text": "start this discussion with um just"
+    },
+    {
+      "start": "00:00:20.279",
+      "end": "00:00:23.670",
+      "text": "start this discussion with um just showing you a picture and uh if I ask"
+    },
+    {
+      "start": "00:00:23.670",
+      "end": "00:00:23.680",
+      "text": "showing you a picture and uh if I ask"
+    },
+    {
+      "start": "00:00:23.680",
+      "end": "00:00:26.470",
+      "text": "showing you a picture and uh if I ask you uh to tell me what would actually be"
+    },
+    {
+      "start": "00:00:26.470",
+      "end": "00:00:26.480",
+      "text": "you uh to tell me what would actually be"
+    },
+    {
+      "start": "00:00:26.480",
+      "end": "00:00:28.550",
+      "text": "you uh to tell me what would actually be the first object that you pay attention"
+    },
+    {
+      "start": "00:00:28.550",
+      "end": "00:00:28.560",
+      "text": "the first object that you pay attention"
+    },
+    {
+      "start": "00:00:28.560",
+      "end": "00:00:31.390",
+      "text": "the first object that you pay attention to then most people will probably"
+    },
+    {
+      "start": "00:00:31.390",
+      "end": "00:00:31.400",
+      "text": "to then most people will probably"
+    },
+    {
+      "start": "00:00:31.400",
+      "end": "00:00:34.630",
+      "text": "to then most people will probably respond to with yellow cab and it's not"
+    },
+    {
+      "start": "00:00:34.630",
+      "end": "00:00:34.640",
+      "text": "respond to with yellow cab and it's not"
+    },
+    {
+      "start": "00:00:34.640",
+      "end": "00:00:38.310",
+      "text": "respond to with yellow cab and it's not really accident that lot of cabs in a"
+    },
+    {
+      "start": "00:00:38.310",
+      "end": "00:00:38.320",
+      "text": "really accident that lot of cabs in a"
+    },
+    {
+      "start": "00:00:38.320",
+      "end": "00:00:42.670",
+      "text": "really accident that lot of cabs in a lot of capitals are painted uh yellow U"
+    },
+    {
+      "start": "00:00:42.670",
+      "end": "00:00:42.680",
+      "text": "lot of capitals are painted uh yellow U"
+    },
+    {
+      "start": "00:00:42.680",
+      "end": "00:00:45.389",
+      "text": "lot of capitals are painted uh yellow U and of course that attention uh to"
+    },
+    {
+      "start": "00:00:45.389",
+      "end": "00:00:45.399",
+      "text": "and of course that attention uh to"
+    },
+    {
+      "start": "00:00:45.399",
+      "end": "00:00:48.590",
+      "text": "and of course that attention uh to bright colors originates from thousands"
+    },
+    {
+      "start": "00:00:48.590",
+      "end": "00:00:48.600",
+      "text": "bright colors originates from thousands"
+    },
+    {
+      "start": "00:00:48.600",
+      "end": "00:00:51.549",
+      "text": "bright colors originates from thousands of years of evolution where people are"
+    },
+    {
+      "start": "00:00:51.549",
+      "end": "00:00:51.559",
+      "text": "of years of evolution where people are"
+    },
+    {
+      "start": "00:00:51.559",
+      "end": "00:00:54.790",
+      "text": "of years of evolution where people are of course trained to pay attention to uh"
+    },
+    {
+      "start": "00:00:54.790",
+      "end": "00:00:54.800",
+      "text": "of course trained to pay attention to uh"
+    },
+    {
+      "start": "00:00:54.800",
+      "end": "00:00:56.990",
+      "text": "of course trained to pay attention to uh bright colors which are typically"
+    },
+    {
+      "start": "00:00:56.990",
+      "end": "00:00:57.000",
+      "text": "bright colors which are typically"
+    },
+    {
+      "start": "00:00:57.000",
+      "end": "00:01:00.110",
+      "text": "bright colors which are typically sources of food such as fruits or in"
+    },
+    {
+      "start": "00:01:00.110",
+      "end": "00:01:00.120",
+      "text": "sources of food such as fruits or in"
+    },
+    {
+      "start": "00:01:00.120",
+      "end": "00:01:03.430",
+      "text": "sources of food such as fruits or in some instances sources of uh danger such"
+    },
+    {
+      "start": "00:01:03.430",
+      "end": "00:01:03.440",
+      "text": "some instances sources of uh danger such"
+    },
+    {
+      "start": "00:01:03.440",
+      "end": "00:01:06.590",
+      "text": "some instances sources of uh danger such as the yellow tiger that is coming"
+    },
+    {
+      "start": "00:01:06.590",
+      "end": "00:01:06.600",
+      "text": "as the yellow tiger that is coming"
+    },
+    {
+      "start": "00:01:06.600",
+      "end": "00:01:10.710",
+      "text": "as the yellow tiger that is coming towards us uh so kind of joking aside I"
+    },
+    {
+      "start": "00:01:10.710",
+      "end": "00:01:10.720",
+      "text": "towards us uh so kind of joking aside I"
+    },
+    {
+      "start": "00:01:10.720",
+      "end": "00:01:15.149",
+      "text": "towards us uh so kind of joking aside I think you can um associate uh this kind"
+    },
+    {
+      "start": "00:01:15.149",
+      "end": "00:01:15.159",
+      "text": "think you can um associate uh this kind"
+    },
+    {
+      "start": "00:01:15.159",
+      "end": "00:01:17.310",
+      "text": "think you can um associate uh this kind of image with the following kind of"
+    },
+    {
+      "start": "00:01:17.310",
+      "end": "00:01:17.320",
+      "text": "of image with the following kind of"
+    },
+    {
+      "start": "00:01:17.320",
+      "end": "00:01:20.710",
+      "text": "of image with the following kind of processing of uh various kind of stage"
+    },
+    {
+      "start": "00:01:20.710",
+      "end": "00:01:20.720",
+      "text": "processing of uh various kind of stage"
+    },
+    {
+      "start": "00:01:20.720",
+      "end": "00:01:22.910",
+      "text": "processing of uh various kind of stage processing that that is been going on in"
+    },
+    {
+      "start": "00:01:22.910",
+      "end": "00:01:22.920",
+      "text": "processing that that is been going on in"
+    },
+    {
+      "start": "00:01:22.920",
+      "end": "00:01:26.109",
+      "text": "processing that that is been going on in your brain uh trying to uh from the kind"
+    },
+    {
+      "start": "00:01:26.109",
+      "end": "00:01:26.119",
+      "text": "your brain uh trying to uh from the kind"
+    },
+    {
+      "start": "00:01:26.119",
+      "end": "00:01:28.910",
+      "text": "your brain uh trying to uh from the kind of perception system that embeds uh into"
+    },
+    {
+      "start": "00:01:28.910",
+      "end": "00:01:28.920",
+      "text": "of perception system that embeds uh into"
+    },
+    {
+      "start": "00:01:28.920",
+      "end": "00:01:30.950",
+      "text": "of perception system that embeds uh into it that we have embedded into it so if"
+    },
+    {
+      "start": "00:01:30.950",
+      "end": "00:01:30.960",
+      "text": "it that we have embedded into it so if"
+    },
+    {
+      "start": "00:01:30.960",
+      "end": "00:01:34.149",
+      "text": "it that we have embedded into it so if you can imagine the process um then the"
+    },
+    {
+      "start": "00:01:34.149",
+      "end": "00:01:34.159",
+      "text": "you can imagine the process um then the"
+    },
+    {
+      "start": "00:01:34.159",
+      "end": "00:01:36.270",
+      "text": "you can imagine the process um then the first thing that you open your eyes soon"
+    },
+    {
+      "start": "00:01:36.270",
+      "end": "00:01:36.280",
+      "text": "first thing that you open your eyes soon"
+    },
+    {
+      "start": "00:01:36.280",
+      "end": "00:01:38.310",
+      "text": "first thing that you open your eyes soon that you have your eyes closed and you"
+    },
+    {
+      "start": "00:01:38.310",
+      "end": "00:01:38.320",
+      "text": "that you have your eyes closed and you"
+    },
+    {
+      "start": "00:01:38.320",
+      "end": "00:01:41.590",
+      "text": "that you have your eyes closed and you see an image like this uh then the brain"
+    },
+    {
+      "start": "00:01:41.590",
+      "end": "00:01:41.600",
+      "text": "see an image like this uh then the brain"
+    },
+    {
+      "start": "00:01:41.600",
+      "end": "00:01:44.429",
+      "text": "see an image like this uh then the brain is actually in a uh first few"
+    },
+    {
+      "start": "00:01:44.429",
+      "end": "00:01:44.439",
+      "text": "is actually in a uh first few"
+    },
+    {
+      "start": "00:01:44.439",
+      "end": "00:01:47.270",
+      "text": "is actually in a uh first few milliseconds is uh sampling this image"
+    },
+    {
+      "start": "00:01:47.270",
+      "end": "00:01:47.280",
+      "text": "milliseconds is uh sampling this image"
+    },
+    {
+      "start": "00:01:47.280",
+      "end": "00:01:50.389",
+      "text": "milliseconds is uh sampling this image in a course kind of way uh and uh"
+    },
+    {
+      "start": "00:01:50.389",
+      "end": "00:01:50.399",
+      "text": "in a course kind of way uh and uh"
+    },
+    {
+      "start": "00:01:50.399",
+      "end": "00:01:53.709",
+      "text": "in a course kind of way uh and uh determines whether we have uh situations"
+    },
+    {
+      "start": "00:01:53.709",
+      "end": "00:01:53.719",
+      "text": "determines whether we have uh situations"
+    },
+    {
+      "start": "00:01:53.719",
+      "end": "00:01:55.830",
+      "text": "determines whether we have uh situations as as an immediate kind of threat or a"
+    },
+    {
+      "start": "00:01:55.830",
+      "end": "00:01:55.840",
+      "text": "as as an immediate kind of threat or a"
+    },
+    {
+      "start": "00:01:55.840",
+      "end": "00:01:58.789",
+      "text": "as as an immediate kind of threat or a source of food and then very quickly the"
+    },
+    {
+      "start": "00:01:58.789",
+      "end": "00:01:58.799",
+      "text": "source of food and then very quickly the"
+    },
+    {
+      "start": "00:01:58.799",
+      "end": "00:02:00.389",
+      "text": "source of food and then very quickly the brain switches"
+    },
+    {
+      "start": "00:02:00.389",
+      "end": "00:02:00.399",
+      "text": "brain switches"
+    },
+    {
+      "start": "00:02:00.399",
+      "end": "00:02:04.029",
+      "text": "brain switches softly into uh objects paying attention"
+    },
+    {
+      "start": "00:02:04.029",
+      "end": "00:02:04.039",
+      "text": "softly into uh objects paying attention"
+    },
+    {
+      "start": "00:02:04.039",
+      "end": "00:02:06.109",
+      "text": "softly into uh objects paying attention to objects which are associated with the"
+    },
+    {
+      "start": "00:02:06.109",
+      "end": "00:02:06.119",
+      "text": "to objects which are associated with the"
+    },
+    {
+      "start": "00:02:06.119",
+      "end": "00:02:10.309",
+      "text": "to objects which are associated with the task that we have uh we we we have to to"
+    },
+    {
+      "start": "00:02:10.309",
+      "end": "00:02:10.319",
+      "text": "task that we have uh we we we have to to"
+    },
+    {
+      "start": "00:02:10.319",
+      "end": "00:02:12.630",
+      "text": "task that we have uh we we we have to to execute so we have the uh for example if"
+    },
+    {
+      "start": "00:02:12.630",
+      "end": "00:02:12.640",
+      "text": "execute so we have the uh for example if"
+    },
+    {
+      "start": "00:02:12.640",
+      "end": "00:02:15.390",
+      "text": "execute so we have the uh for example if you're waiting for someone uh in this"
+    },
+    {
+      "start": "00:02:15.390",
+      "end": "00:02:15.400",
+      "text": "you're waiting for someone uh in this"
+    },
+    {
+      "start": "00:02:15.400",
+      "end": "00:02:17.670",
+      "text": "you're waiting for someone uh in this kind of a scene then you start paying"
+    },
+    {
+      "start": "00:02:17.670",
+      "end": "00:02:17.680",
+      "text": "kind of a scene then you start paying"
+    },
+    {
+      "start": "00:02:17.680",
+      "end": "00:02:19.550",
+      "text": "kind of a scene then you start paying more attention to people coming towards"
+    },
+    {
+      "start": "00:02:19.550",
+      "end": "00:02:19.560",
+      "text": "more attention to people coming towards"
+    },
+    {
+      "start": "00:02:19.560",
+      "end": "00:02:22.150",
+      "text": "more attention to people coming towards you people getting out of vehicles and"
+    },
+    {
+      "start": "00:02:22.150",
+      "end": "00:02:22.160",
+      "text": "you people getting out of vehicles and"
+    },
+    {
+      "start": "00:02:22.160",
+      "end": "00:02:23.350",
+      "text": "you people getting out of vehicles and so"
+    },
+    {
+      "start": "00:02:23.350",
+      "end": "00:02:23.360",
+      "text": "so"
+    },
+    {
+      "start": "00:02:23.360",
+      "end": "00:02:27.270",
+      "text": "so on so now uh what I like to start"
+    },
+    {
+      "start": "00:02:27.270",
+      "end": "00:02:27.280",
+      "text": "on so now uh what I like to start"
+    },
+    {
+      "start": "00:02:27.280",
+      "end": "00:02:30.070",
+      "text": "on so now uh what I like to start getting into is uh the mechanics of a"
+    },
+    {
+      "start": "00:02:30.070",
+      "end": "00:02:30.080",
+      "text": "getting into is uh the mechanics of a"
+    },
+    {
+      "start": "00:02:30.080",
+      "end": "00:02:31.790",
+      "text": "getting into is uh the mechanics of a little bit of computer vision some kind"
+    },
+    {
+      "start": "00:02:31.790",
+      "end": "00:02:31.800",
+      "text": "little bit of computer vision some kind"
+    },
+    {
+      "start": "00:02:31.800",
+      "end": "00:02:34.390",
+      "text": "little bit of computer vision some kind of basic principles and I wanted to"
+    },
+    {
+      "start": "00:02:34.390",
+      "end": "00:02:34.400",
+      "text": "of basic principles and I wanted to"
+    },
+    {
+      "start": "00:02:34.400",
+      "end": "00:02:36.990",
+      "text": "of basic principles and I wanted to cover a little bit um you know the the"
+    },
+    {
+      "start": "00:02:36.990",
+      "end": "00:02:37.000",
+      "text": "cover a little bit um you know the the"
+    },
+    {
+      "start": "00:02:37.000",
+      "end": "00:02:39.910",
+      "text": "cover a little bit um you know the the question as to okay what is an image"
+    },
+    {
+      "start": "00:02:39.910",
+      "end": "00:02:39.920",
+      "text": "question as to okay what is an image"
+    },
+    {
+      "start": "00:02:39.920",
+      "end": "00:02:41.430",
+      "text": "question as to okay what is an image that like the one that we've seen"
+    },
+    {
+      "start": "00:02:41.430",
+      "end": "00:02:41.440",
+      "text": "that like the one that we've seen"
+    },
+    {
+      "start": "00:02:41.440",
+      "end": "00:02:43.990",
+      "text": "that like the one that we've seen earlier and how we're going to represent"
+    },
+    {
+      "start": "00:02:43.990",
+      "end": "00:02:44.000",
+      "text": "earlier and how we're going to represent"
+    },
+    {
+      "start": "00:02:44.000",
+      "end": "00:02:47.470",
+      "text": "earlier and how we're going to represent it and evidently an image is a matrix"
+    },
+    {
+      "start": "00:02:47.470",
+      "end": "00:02:47.480",
+      "text": "it and evidently an image is a matrix"
+    },
+    {
+      "start": "00:02:47.480",
+      "end": "00:02:49.350",
+      "text": "it and evidently an image is a matrix and I think we had some discussion about"
+    },
+    {
+      "start": "00:02:49.350",
+      "end": "00:02:49.360",
+      "text": "and I think we had some discussion about"
+    },
+    {
+      "start": "00:02:49.360",
+      "end": "00:02:52.910",
+      "text": "and I think we had some discussion about images uh before and a black white imag"
+    },
+    {
+      "start": "00:02:52.910",
+      "end": "00:02:52.920",
+      "text": "images uh before and a black white imag"
+    },
+    {
+      "start": "00:02:52.920",
+      "end": "00:02:55.070",
+      "text": "images uh before and a black white imag is or a grayscale image as you actually"
+    },
+    {
+      "start": "00:02:55.070",
+      "end": "00:02:55.080",
+      "text": "is or a grayscale image as you actually"
+    },
+    {
+      "start": "00:02:55.080",
+      "end": "00:02:59.910",
+      "text": "is or a grayscale image as you actually see over here is um a matrix of um that"
+    },
+    {
+      "start": "00:02:59.910",
+      "end": "00:02:59.920",
+      "text": "see over here is um a matrix of um that"
+    },
+    {
+      "start": "00:02:59.920",
+      "end": "00:03:00.869",
+      "text": "see over here is um a matrix of um that whose"
+    },
+    {
+      "start": "00:03:00.869",
+      "end": "00:03:00.879",
+      "text": "whose"
+    },
+    {
+      "start": "00:03:00.879",
+      "end": "00:03:05.270",
+      "text": "whose elements are integer numbers and um this"
+    },
+    {
+      "start": "00:03:05.270",
+      "end": "00:03:05.280",
+      "text": "elements are integer numbers and um this"
+    },
+    {
+      "start": "00:03:05.280",
+      "end": "00:03:08.030",
+      "text": "elements are integer numbers and um this integer numbers typically we are um you"
+    },
+    {
+      "start": "00:03:08.030",
+      "end": "00:03:08.040",
+      "text": "integer numbers typically we are um you"
+    },
+    {
+      "start": "00:03:08.040",
+      "end": "00:03:10.430",
+      "text": "integer numbers typically we are um you know each element corresponds to a pixel"
+    },
+    {
+      "start": "00:03:10.430",
+      "end": "00:03:10.440",
+      "text": "know each element corresponds to a pixel"
+    },
+    {
+      "start": "00:03:10.440",
+      "end": "00:03:12.869",
+      "text": "know each element corresponds to a pixel and the dynamic range that we associate"
+    },
+    {
+      "start": "00:03:12.869",
+      "end": "00:03:12.879",
+      "text": "and the dynamic range that we associate"
+    },
+    {
+      "start": "00:03:12.879",
+      "end": "00:03:15.949",
+      "text": "and the dynamic range that we associate with uh typically for in computer vision"
+    },
+    {
+      "start": "00:03:15.949",
+      "end": "00:03:15.959",
+      "text": "with uh typically for in computer vision"
+    },
+    {
+      "start": "00:03:15.959",
+      "end": "00:03:18.470",
+      "text": "with uh typically for in computer vision with those pixels are 8 Bits so we"
+    },
+    {
+      "start": "00:03:18.470",
+      "end": "00:03:18.480",
+      "text": "with those pixels are 8 Bits so we"
+    },
+    {
+      "start": "00:03:18.480",
+      "end": "00:03:20.430",
+      "text": "with those pixels are 8 Bits so we represent the information at each pixel"
+    },
+    {
+      "start": "00:03:20.430",
+      "end": "00:03:20.440",
+      "text": "represent the information at each pixel"
+    },
+    {
+      "start": "00:03:20.440",
+      "end": "00:03:22.949",
+      "text": "represent the information at each pixel and codes as 8 Bits which means that"
+    },
+    {
+      "start": "00:03:22.949",
+      "end": "00:03:22.959",
+      "text": "and codes as 8 Bits which means that"
+    },
+    {
+      "start": "00:03:22.959",
+      "end": "00:03:25.750",
+      "text": "and codes as 8 Bits which means that these integer numbers are zero from 0 to"
+    },
+    {
+      "start": "00:03:25.750",
+      "end": "00:03:25.760",
+      "text": "these integer numbers are zero from 0 to"
+    },
+    {
+      "start": "00:03:25.760",
+      "end": "00:03:30.110",
+      "text": "these integer numbers are zero from 0 to 255 and uh so um when we go to color IM"
+    },
+    {
+      "start": "00:03:30.110",
+      "end": "00:03:30.120",
+      "text": "255 and uh so um when we go to color IM"
+    },
+    {
+      "start": "00:03:30.120",
+      "end": "00:03:34.470",
+      "text": "255 and uh so um when we go to color IM es we need more than one of those"
+    },
+    {
+      "start": "00:03:34.470",
+      "end": "00:03:34.480",
+      "text": "es we need more than one of those"
+    },
+    {
+      "start": "00:03:34.480",
+      "end": "00:03:36.670",
+      "text": "es we need more than one of those matrices in fact we need three matrices"
+    },
+    {
+      "start": "00:03:36.670",
+      "end": "00:03:36.680",
+      "text": "matrices in fact we need three matrices"
+    },
+    {
+      "start": "00:03:36.680",
+      "end": "00:03:38.869",
+      "text": "matrices in fact we need three matrices typically again there are sensors which"
+    },
+    {
+      "start": "00:03:38.869",
+      "end": "00:03:38.879",
+      "text": "typically again there are sensors which"
+    },
+    {
+      "start": "00:03:38.879",
+      "end": "00:03:41.429",
+      "text": "typically again there are sensors which are of course encode the information to"
+    },
+    {
+      "start": "00:03:41.429",
+      "end": "00:03:41.439",
+      "text": "are of course encode the information to"
+    },
+    {
+      "start": "00:03:41.439",
+      "end": "00:03:44.350",
+      "text": "are of course encode the information to far more than uh three matrices uh but"
+    },
+    {
+      "start": "00:03:44.350",
+      "end": "00:03:44.360",
+      "text": "far more than uh three matrices uh but"
+    },
+    {
+      "start": "00:03:44.360",
+      "end": "00:03:46.710",
+      "text": "far more than uh three matrices uh but those three matrices are corresponds to"
+    },
+    {
+      "start": "00:03:46.710",
+      "end": "00:03:46.720",
+      "text": "those three matrices are corresponds to"
+    },
+    {
+      "start": "00:03:46.720",
+      "end": "00:03:49.750",
+      "text": "those three matrices are corresponds to the fundamental colors typically of red"
+    },
+    {
+      "start": "00:03:49.750",
+      "end": "00:03:49.760",
+      "text": "the fundamental colors typically of red"
+    },
+    {
+      "start": "00:03:49.760",
+      "end": "00:03:53.509",
+      "text": "the fundamental colors typically of red green and blue uh and this um uh which"
+    },
+    {
+      "start": "00:03:53.509",
+      "end": "00:03:53.519",
+      "text": "green and blue uh and this um uh which"
+    },
+    {
+      "start": "00:03:53.519",
+      "end": "00:03:55.990",
+      "text": "green and blue uh and this um uh which is actually what you see here and also"
+    },
+    {
+      "start": "00:03:55.990",
+      "end": "00:03:56.000",
+      "text": "is actually what you see here and also"
+    },
+    {
+      "start": "00:03:56.000",
+      "end": "00:03:57.470",
+      "text": "is actually what you see here and also probably you notice that these numbers"
+    },
+    {
+      "start": "00:03:57.470",
+      "end": "00:03:57.480",
+      "text": "probably you notice that these numbers"
+    },
+    {
+      "start": "00:03:57.480",
+      "end": "00:03:59.270",
+      "text": "probably you notice that these numbers are now floating Point numbers let's say"
+    },
+    {
+      "start": "00:03:59.270",
+      "end": "00:03:59.280",
+      "text": "are now floating Point numbers let's say"
+    },
+    {
+      "start": "00:03:59.280",
+      "end": "00:04:02.309",
+      "text": "are now floating Point numbers let's say from 0 to one and this results from"
+    },
+    {
+      "start": "00:04:02.309",
+      "end": "00:04:02.319",
+      "text": "from 0 to one and this results from"
+    },
+    {
+      "start": "00:04:02.319",
+      "end": "00:04:06.030",
+      "text": "from 0 to one and this results from normalizing these uh uh pixel numbers uh"
+    },
+    {
+      "start": "00:04:06.030",
+      "end": "00:04:06.040",
+      "text": "normalizing these uh uh pixel numbers uh"
+    },
+    {
+      "start": "00:04:06.040",
+      "end": "00:04:09.509",
+      "text": "normalizing these uh uh pixel numbers uh uh to uh with a number 255 because 2 to"
+    },
+    {
+      "start": "00:04:09.509",
+      "end": "00:04:09.519",
+      "text": "uh to uh with a number 255 because 2 to"
+    },
+    {
+      "start": "00:04:09.519",
+      "end": "00:04:11.350",
+      "text": "uh to uh with a number 255 because 2 to the power of 8 is"
+    },
+    {
+      "start": "00:04:11.350",
+      "end": "00:04:11.360",
+      "text": "the power of 8 is"
+    },
+    {
+      "start": "00:04:11.360",
+      "end": "00:04:14.830",
+      "text": "the power of 8 is 256 and uh uh therefore all our numbers"
+    },
+    {
+      "start": "00:04:14.830",
+      "end": "00:04:14.840",
+      "text": "256 and uh uh therefore all our numbers"
+    },
+    {
+      "start": "00:04:14.840",
+      "end": "00:04:17.990",
+      "text": "256 and uh uh therefore all our numbers will be from 0 to 255 in those matrices"
+    },
+    {
+      "start": "00:04:17.990",
+      "end": "00:04:18.000",
+      "text": "will be from 0 to 255 in those matrices"
+    },
+    {
+      "start": "00:04:18.000",
+      "end": "00:04:20.110",
+      "text": "will be from 0 to 255 in those matrices if we start dividing every element with"
+    },
+    {
+      "start": "00:04:20.110",
+      "end": "00:04:20.120",
+      "text": "if we start dividing every element with"
+    },
+    {
+      "start": "00:04:20.120",
+      "end": "00:04:24.430",
+      "text": "if we start dividing every element with 255 we get numbers between 0 and 1 and"
+    },
+    {
+      "start": "00:04:24.430",
+      "end": "00:04:24.440",
+      "text": "255 we get numbers between 0 and 1 and"
+    },
+    {
+      "start": "00:04:24.440",
+      "end": "00:04:26.510",
+      "text": "255 we get numbers between 0 and 1 and this is basically what we need to do in"
+    },
+    {
+      "start": "00:04:26.510",
+      "end": "00:04:26.520",
+      "text": "this is basically what we need to do in"
+    },
+    {
+      "start": "00:04:26.520",
+      "end": "00:04:29.749",
+      "text": "this is basically what we need to do in order to process uh the images in with"
+    },
+    {
+      "start": "00:04:29.749",
+      "end": "00:04:29.759",
+      "text": "order to process uh the images in with"
+    },
+    {
+      "start": "00:04:29.759",
+      "end": "00:04:31.710",
+      "text": "order to process uh the images in with with our new neural networks that we"
+    },
+    {
+      "start": "00:04:31.710",
+      "end": "00:04:31.720",
+      "text": "with our new neural networks that we"
+    },
+    {
+      "start": "00:04:31.720",
+      "end": "00:04:33.270",
+      "text": "with our new neural networks that we will introduce now called the"
+    },
+    {
+      "start": "00:04:33.270",
+      "end": "00:04:33.280",
+      "text": "will introduce now called the"
+    },
+    {
+      "start": "00:04:33.280",
+      "end": "00:04:36.350",
+      "text": "will introduce now called the convolutional neural networks so uh with"
+    },
+    {
+      "start": "00:04:36.350",
+      "end": "00:04:36.360",
+      "text": "convolutional neural networks so uh with"
+    },
+    {
+      "start": "00:04:36.360",
+      "end": "00:04:39.150",
+      "text": "convolutional neural networks so uh with convolutional neural networks we need to"
+    },
+    {
+      "start": "00:04:39.150",
+      "end": "00:04:39.160",
+      "text": "convolutional neural networks we need to"
+    },
+    {
+      "start": "00:04:39.160",
+      "end": "00:04:42.029",
+      "text": "convolutional neural networks we need to start the discussion on what is a"
+    },
+    {
+      "start": "00:04:42.029",
+      "end": "00:04:42.039",
+      "text": "start the discussion on what is a"
+    },
+    {
+      "start": "00:04:42.039",
+      "end": "00:04:44.310",
+      "text": "start the discussion on what is a convolution and uh this is what's coming"
+    },
+    {
+      "start": "00:04:44.310",
+      "end": "00:04:44.320",
+      "text": "convolution and uh this is what's coming"
+    },
+    {
+      "start": "00:04:44.320",
+      "end": "00:04:46.680",
+      "text": "convolution and uh this is what's coming next"
+    }
+  ]
+}
