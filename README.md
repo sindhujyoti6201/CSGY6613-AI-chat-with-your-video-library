@@ -18,6 +18,8 @@ Refer to the detailed documentation above - "Artificial Intelligence Project Rep
 1. Download the below "youtube_dataset.tar" dataset from HuggingFace and place it in  `/datasets/.` :
    
    `https://huggingface.co/datasets/aegean-ai/ai-lectures-spring-24/tree/main`
+
+   Also place all the videos in the tar files inside the /videos as is shown for one video (uploading all the videos to the github was giving issues due to its size)
 2. Run the services of the docker compose file in the following order:
     - mongo
     - mongo-express
